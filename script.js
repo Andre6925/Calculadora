@@ -24,7 +24,9 @@ const operator_btns = document.querySelectorAll("button[data-type=operator]");
 
 let equation = [];
 operator_btns.forEach((btn) => {
-    btn.addEventListener("click", )
+    btn.addEventListener("click", (e) => {
+
+    
     remove_active();
     e.currentTarget.classList.add("active");
 
@@ -54,7 +56,8 @@ operator_btns.forEach((btn) => {
             is_operator.operator = true;
             break; 
     }
-})
+});
+});
 
 const remove_active = () => {
     operator_btns.forEach((btn) => {
